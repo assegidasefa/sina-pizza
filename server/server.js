@@ -7,7 +7,8 @@ const pizzasRoute = require('./routes/pizzasRoute')
 const userRoute = require("./routes/userRoute")
 const ordersRoute = require("./routes/ordersRoute")
 
-
+const cors = require("cors")
+app.use(cors())
 
 app.use(express.json())
 
